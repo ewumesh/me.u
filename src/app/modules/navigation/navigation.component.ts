@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-name',
+    selector: 'top-nav',
     templateUrl: './navigation.component.html',
-    styleUrls: ['./navigation.component.html']
+    styleUrls: ['./navigation.css']
 })
 export class NavigationComponent implements OnInit {
     constructor() { }

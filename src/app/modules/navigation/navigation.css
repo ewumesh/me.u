@@ -75,7 +75,7 @@ header {
 .nav li{
   position:relative;
   height: 60px;
-  width: 400px;
+  width: 20%;
   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
 }
 
