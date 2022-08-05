@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'top-nav',
@@ -6,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./navigation.css']
 })
 export class NavigationComponent implements OnInit {
-    constructor() { }
+    constructor(private router: Router) { }
+
+    gotoHomePage(){
+        this.router.navigate(['/home']);
+    }
+
+    gotoBlogs() {
+        this.router.navigate(['/blogs']);
+    }
 
     ngOnInit() { }
 }

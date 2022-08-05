@@ -102,6 +102,7 @@ header {
   padding-top: 8px;
   background-color: #1A2434;
   clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
+  cursor: pointer;
 }
 
 #a-home{
