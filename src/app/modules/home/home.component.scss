@@ -1,0 +1,147 @@
+@import "~swiper/css";
+@import "~swiper/css/effect-coverflow";
+@import "~swiper/css/pagination";
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+//Other
+/* Container */
+.container_custom {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+/* Home Page */
+.titular .tagline {
+	font-size: 60px;
+	color: #FFF;
+	font-family: Times New Roman;
+	position: absolute;
+  margin-top: 200px;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+	animation: effect 2s linear infinite; 
+	text-shadow: 1px 1px 4px #000000;
+}
+
+@keyframes effect { 
+	0% { 
+		color: #011627;
+		-webkit-background-clip: text;
+	} 
+	25% { 
+		color: #7678ed; 
+		-webkit-background-clip: text; 
+	}
+
+    50% {
+        color: #e01e37; 
+		-webkit-background-clip: text; 
+    }
+    75% {
+        color: #05668d; 
+		-webkit-background-clip: text; 
+    }
+    100% {
+        color: #0a1128; 
+		-webkit-background-clip: text; 
+    }
+} 
+
+.titular .subtitle {
+	font-size: 25px;
+	color: #FFFFFF;
+	font-family: Bahnschrift;
+	position: absolute;
+	margin-top: 210px;;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 4px #000000;
+}
+
+.titular .btntop {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Bahnschrift;
+	color: #FFF;
+	border: 2px solid white;
+	border-radius: 5px;
+	position: absolute;
+  top: 8%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+	padding: 8px 25px;
+  cursor: pointer;
+	background-color: transparent;
+}
+
+.titular .btntop:hover {
+	background-color: #FFF;
+	color: rgb(0,35,51);
+	cursor: pointer;
+}
+
+.titular .btn {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Bahnschrift;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	position: absolute;
+  margin-top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	padding: 12px 25px;
+  cursor: pointer;
+	background-color: rgb(0,35,51);
+}
+
+.titular .bg {
+	width: 100%; 
+	height: 100%;
+	opacity: 70%;
+}
+
+
+
+@media screen and (max-width: 2000px) {
+	.titular .tagline {
+		font-size: 45px;
+		top: 30%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.titular .tagline {
+		font-size: 30px;
+		top: 8%;
+	}
+	.titular .subtitle {
+		font-size: 18px;
+		top: 16%;
+	}
+	.titular .btn {
+		margin-top: 330px;
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+}
