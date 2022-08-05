@@ -161,3 +161,7 @@
     font-weight:600
   }
 }
+
+.site-footer >>> a {
+    text-decoration: none !important;
+}
