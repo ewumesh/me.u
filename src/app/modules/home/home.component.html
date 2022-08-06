@@ -7,14 +7,18 @@
     </div>
 </div>
 
-<swiper
+<div class="row ma-0 pa-0">
+  <div class="col-md-12">
+  </div>
+  <div class="col-md-12">
+    <swiper
     [effect]="'coverflow'"
     [grabCursor]="true"
     [centeredSlides]="true"
     [slidesPerView]="'auto'"
     [autoplay]="true"
     [speed]="800"
-    [pagination]="{ clickable: true,currentClass:'3' }"
+    [initialSlide]="3"
     [coverflowEffect]="{
       rotate: 50,
       stretch: 0,
@@ -46,6 +50,10 @@
       ><img src="https://swiperjs.com/demos/images/nature-9.jpg"
     /></ng-template>
   </swiper>
+  </div>
+</div>
+
+
 
 <div class="service_container">
     <h1>Our Services</h1>
