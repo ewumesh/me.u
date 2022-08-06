@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { FooterComponent } from './modules/footer/footer.component';
 import { NavigationComponent } from './modules/navigation/navigation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NavigationComponent } from './modules/navigation/navigation.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],

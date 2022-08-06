@@ -1,6 +1,6 @@
 @import "~swiper/css";
-@import "~swiper/css/effect-coverflow";
-@import "~swiper/css/pagination";
+@import "~swiper/css/bundle";
+// @import "~swiper/css/pagination";
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -232,3 +232,199 @@
     letter-spacing: 1px;
     color: #101620;
   }
+
+  // SERVICE
+  .service_container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 1% 1% 1%;
+  }
+  
+  .service_container h1 {
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .service_container h1::after {
+    content: '';
+    background: #1A2434;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .service_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border:3px solid #f5f3f4;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+  }
+  
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #101620;
+  }
+  
+  .service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .service:hover {
+    background: #1A2434;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .service:hover i {
+    color: #fff;
+  }
+
+  //contact
+
+  #contact {
+    background-color: #f5f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-box {
+    width: clamp(100px, 90%, 1000px);
+    margin: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links, .contact-form-wrapper {
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+  }
+  
+  
+  .contact-links {
+    background-color: #1f2e43;
+    background:
+      radial-gradient(
+        circle at 55% 92%, #426691 0 12%, transparent 12.2%
+      ), 
+      radial-gradient(
+        circle at 94% 72%, #426691 0 10%, transparent 10.2%
+      ), 
+      radial-gradient(
+        circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+      ), 
+      radial-gradient(
+        circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+      ), 
+      #1f2e43;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .contact-form-wrapper {
+    background-color: #ffffff8f;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-links, .contact-form-wrapper {
+      width: 100%;
+    }
+    
+    .contact-links {
+      border-radius: 10px 10px 0 0;
+    }
+    
+    .contact-form-wrapper {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact-box {
+      width: 95%;
+      margin: 8% 5%;
+    }
+  }
+  
+  .contact_header {
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    font-size: clamp(30px, 6vw, 60px);
+    letter-spacing: 2px;
+    text-align: center;
+    transform: scale(.95, 1);
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .link {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .contact_social_img {
+    width: 45px;
+    height: 45px;
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #0006);
+    transition: 0.2s;
+    user-select: none;
+  }
+  
+  .contact_social_img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .contact_social_img:active {
+    transform: scale(1.1, 1.1);
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #222)
+      sepia(0.3);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact_header {
+      font-size: clamp(40px, 10vw, 60px);
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact_header {
+      font-size: clamp(30px, 12vw, 60px);
+    }
+    
+    .links {
+      padding-top: 30px;
+    }
+    
+    .contact_social_img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  

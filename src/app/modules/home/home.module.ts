@@ -7,13 +7,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeService } from "./home.service";
 import { Title } from "@angular/platform-browser";
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 @NgModule({
     imports: [
         CommonModule,
+        // BrowserAnimationsModule,
         HttpClientModule,
         SwiperModule,
         MatCardModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
         RouterModule.forChild([
             { path: '', component: HomeComponent }
         ])

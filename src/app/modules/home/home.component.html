@@ -7,10 +7,107 @@
     </div>
 </div>
 
-<!-- <mat-card style="margin: 0; padding:0; width:100%">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
-            alt="Students gathered around a table, laughing" class="bg" />
-</mat-card> -->
+<swiper
+    [effect]="'coverflow'"
+    [grabCursor]="true"
+    [centeredSlides]="true"
+    [slidesPerView]="'auto'"
+    [autoplay]="true"
+    [speed]="800"
+    [pagination]="{ clickable: true,currentClass:'3' }"
+    [coverflowEffect]="{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      
+      slideShadows: true
+    }"
+    [pagination]="true"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-3.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-7.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-8.jpg" /></ng-template
+    ><ng-template swiperSlide
+      ><img src="https://swiperjs.com/demos/images/nature-9.jpg"
+    /></ng-template>
+  </swiper>
+
+<div class="service_container">
+    <h1>Our Services</h1>
+    <div class="service_row">
+      <div class="service">
+        <i class="fa fa-code"></i>
+        <h2>Web Design</h2>
+        <p>
+            Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-bar-chart"></i>
+        <h2>Marketing</h2>
+        <p>
+            Marketing is the process of exploring, creating, and delivering value to meet the needs of a target market in terms of goods and services; potentially including selection of a target audience;
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-diamond"></i>
+        <h2>Graphics</h2>
+        <p>
+            Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit messages to social groups with specific objectives.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-database"></i>
+        <h2>Data Analysis</h2>
+        <p>
+            Data analysis is a process of inspecting, cleansing, transforming, and modelling data with the goal of discovering useful information
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-mobile"></i>
+        <h2>App Development</h2>
+        <p>
+            Mobile application development is the set of processes and procedures involved in writing software for small, wireless computing devices.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-file-text"></i>
+        <h2>Accounting</h2>
+        <p>
+            Accounting, also known as accountancy, is the measurement, processing, and communication of financial and non financial information about economic entities such as businesses and corporations.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-usd"></i>
+        <h2>Payroll</h2>
+        <p>
+            A payroll is the list of employees of some company that is entitled to receive payments as well as other work benefits and the amounts that each should receive.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-tasks"></i>
+        <h2>Networking</h2>
+        <p>
+            A computer network is a set of computers sharing resources located on or provided by network nodes.
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -44,3 +141,42 @@
         </div>
     </div>
 </div>
+
+<section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2 class="contact_header">CONTACT</h2>
+        <div class="links">
+          <div class="link">
+            <a href="https://www.linkedin.com/in/umesh-thapa-3ba732156/" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+          </div>
+          <div class="link">
+            <a href="https://github.com/umeshthapa12" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          </div>
+          <div class="link">
+            <a href="https://codepen.io/umesh-thapa-the-typescripter" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+          </div>
+          <div class="link">
+            <a href="https://mail.google.com/" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form [formGroup]="quickContactForm" (submit)="submitQuickMail($event)">
+            <mat-form-field style="width: 100%;" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" type="email" matInput placeholder="Ex.Samantha">
+              </mat-form-field>
+              <mat-form-field style="width: 100%;" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+              </mat-form-field>
+              <mat-form-field style="width: 100%;" appearance="outline">
+                <mat-label>Message</mat-label>
+                <textarea formControlName="message" type="email" matInput placeholder="Message"></textarea>
+              </mat-form-field>
+          <button type="submit" class="btn btn-primary">Send</button>  
+        </form>
+      </div>
+    </div>
+  </section>
