@@ -15,6 +15,7 @@ import emailjs from "emailjs-com";
     styleUrls: ['./home.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
+// https://app.nocodeapi.com/dashboard/api/github
 
 export class HomeComponent implements OnInit {
 
