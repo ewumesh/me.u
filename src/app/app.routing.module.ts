@@ -7,6 +7,7 @@ const routes: Routes = [
 	{path: 'blogs', loadChildren: () => import('./modules/blogs/blogs.module'). then(r => r.BlogsModule)},
 	{path: '404', loadChildren: () => import('./modules/shared/404/404.module').then(m => m.NotFoundModule)},
 	{path: 'github', loadChildren: () => import('./modules/github/github.module').then(m => m.GithubModule)},
+	{path: 'instagram', loadChildren: () => import('./modules/instagram/instagram.module').then(m => m.InstagramModule)},
 	{ path: '**', redirectTo: '404' },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

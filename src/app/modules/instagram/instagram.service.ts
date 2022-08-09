@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 
@@ -13,7 +13,7 @@ export class InstagramService {
 
 
     getInstagramDetails():Observable<any> {
-        return this.http.get<any>(this.urlForInstagramDetails);
+        return this.http.get<any>(this.urlForInstagramDetails,{headers : new HttpHeaders({ 'Content-Type': 'application/json' })});
     }
 
     getInstagramIndividualDetails(id:any):Observable<any> {
