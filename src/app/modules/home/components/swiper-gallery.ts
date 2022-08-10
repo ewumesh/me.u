@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
@@ -10,7 +11,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
     encapsulation: ViewEncapsulation.None,
 })
 export class SwiperGalleryComponent implements OnInit {
-    constructor() { }
+    constructor() {}
 
     ngOnInit(): void { }
 }
