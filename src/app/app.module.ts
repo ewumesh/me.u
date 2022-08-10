@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app.routing.module';
-import { FooterComponent } from './modules/footer/footer.component';
-import { NavigationComponent } from './modules/navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
+import { AppComponent } from 'src/app/app.component';
+import { AppRoutingModule } from 'src/app/app.routing.module';
+import { FooterComponent } from 'src/app/modules/footer/footer.component';
+import { NavigationComponent } from 'src/app/modules/navigation/navigation.component';
 
 @NgModule({
   declarations: [
