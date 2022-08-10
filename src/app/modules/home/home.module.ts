@@ -1,17 +1,17 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { HomeComponent } from "./home.component";
 import { SwiperModule } from "swiper/angular";
 import { HttpClientModule } from '@angular/common/http';
-import { HomeService } from "./home.service";
 import { Title } from "@angular/platform-browser";
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { SwiperGalleryComponent } from "./components/swiper-gallery";
 
+import { SwiperGalleryComponent } from "src/app/modules/home/components/swiper-gallery";
+import { HomeService } from "src/app/modules/home/home.service";
+import { HomeComponent } from "src/app/modules/home/home.component";
 @NgModule({
     imports: [
         CommonModule,

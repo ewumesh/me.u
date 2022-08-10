@@ -1,9 +1,10 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from '@angular/common/http';
-
-import { BlogsComponent } from "./blogs.component";
 import { RouterModule } from "@angular/router";
+
+import { BlogsComponent } from "src/app/modules/blogs/blogs.component";
+import { BlogsService } from "src/app/modules/blogs/blogs.service";
 
 @NgModule({
     imports: [
@@ -14,7 +15,7 @@ import { RouterModule } from "@angular/router";
         ])
     ],
     declarations: [BlogsComponent],
-    providers: [],
+    providers: [BlogsService],
     exports: []
 })
 

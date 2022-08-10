@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { GithubService } from "./github.service";
+import { GithubService } from "src/app/modules/github/github.service";
 
 @Component({
     templateUrl: './github.component.html',

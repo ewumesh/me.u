@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import emailjs from "emailjs-com";
 
 // Local File(s)
-import { HomeService } from "./home.service";
+import { HomeService } from "src/app/modules/home/home.service";
 
 @Component({
     templateUrl: './home.component.html',
