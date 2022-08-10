@@ -3,6 +3,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { LightgalleryModule } from 'lightgallery/angular';
+import { GalleryModule } from  'ng-gallery';
 
 import { InstagramComponent } from "./instagram.component";
 import { InstagramService } from "./instagram.service";
