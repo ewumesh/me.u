@@ -27,6 +27,7 @@ export class GithubComponent implements OnInit {
     //IGQVJXcEhpWF91ZAVpyMG1RRTlZAWUZAXX3pNQUV3aWFTeHpGc2pNaDI5WXFvMjRlRjQyUE5KbjRkTkl0U3VWWm5ENmM2dXhFblkyZA2FEYzM4MFpRY0xxM09tYTFLR1h0UGRZANDlRM3RKczJJdEMtT2owRQZDZD
 
     ngOnInit() {
+        this.getGithubRepositories();
         this.getGithubProfileDetails();
     }
 

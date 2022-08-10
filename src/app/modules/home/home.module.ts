@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { SwiperGalleryComponent } from "./components/swiper-gallery";
 
 @NgModule({
     imports: [
@@ -29,7 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ],
     exports: [],
     providers: [HomeService, Title],
-    declarations: [HomeComponent]
+    declarations: [HomeComponent,SwiperGalleryComponent]
 })
 
 export class HomeModule {
