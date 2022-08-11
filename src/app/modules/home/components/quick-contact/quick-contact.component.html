@@ -1,0 +1,38 @@
+<section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2 class="contact_header">CONTACT</h2>
+        <div class="links">
+          <div class="link">
+            <a href="https://www.linkedin.com/in/umesh-thapa-3ba732156/" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+          </div>
+          <div class="link">
+            <a href="https://github.com/umeshthapa12" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          </div>
+          <div class="link">
+            <a href="https://codepen.io/umesh-thapa-the-typescripter" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+          </div>
+          <div class="link">
+            <a href="https://mail.google.com/" target="_blank"><img class="contact_social_img" src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+          </div>
+        </div>
+      </div>
+          <div class="contact-form-wrapper">
+            <form [formGroup]="quickContactForm" (submit)="submitQuickMail($event)">
+                <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input formControlName="name" type="email" matInput placeholder="Ex.Samantha">
+                  </mat-form-field>
+                  <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+                  </mat-form-field>
+                  <mat-form-field style="width: 100%;" appearance="outline">
+                    <mat-label>Message</mat-label>
+                    <textarea formControlName="message" type="email" matInput placeholder="Message"></textarea>
+                  </mat-form-field>
+              <button type="submit" class="btn btn-primary">Send</button>  
+            </form>
+          </div>
+        </div>
+  </section>

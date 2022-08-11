@@ -9,9 +9,10 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
-import { SwiperGalleryComponent } from "src/app/modules/home/components/swiper-gallery";
+import { SwiperGalleryComponent } from "src/app/modules/home/components/swiper-gallery/swiper-gallery";
 import { HomeService } from "src/app/modules/home/home.service";
 import { HomeComponent } from "src/app/modules/home/home.component";
+import { QuickContactComponent } from "src/app/modules/home/components/quick-contact/quick-contact.component";
 @NgModule({
     imports: [
         CommonModule,
@@ -28,7 +29,7 @@ import { HomeComponent } from "src/app/modules/home/home.component";
     ],
     exports: [],
     providers: [HomeService, Title],
-    declarations: [HomeComponent,SwiperGalleryComponent]
+    declarations: [HomeComponent,SwiperGalleryComponent,QuickContactComponent]
 })
 
 export class HomeModule {

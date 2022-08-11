@@ -1,0 +1,130 @@
+//contact
+
+#contact {
+    background-color: #f5f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-box {
+    width: clamp(100px, 90%, 1000px);
+    margin: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links, .contact-form-wrapper {
+    width: 50%;
+    padding: 8% 5% 10% 5%;
+  }
+  
+  
+  .contact-links {
+    background-color: #1f2e43;
+    background:
+      radial-gradient(
+        circle at 55% 92%, #426691 0 12%, transparent 12.2%
+      ), 
+      radial-gradient(
+        circle at 94% 72%, #426691 0 10%, transparent 10.2%
+      ), 
+      radial-gradient(
+        circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%
+      ), 
+      radial-gradient(
+        circle at 0% 0%, #263a53 0 40%, transparent 40.2%
+      ), 
+      #1f2e43;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .contact-form-wrapper {
+    background-color: #ffffff8f;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-links, .contact-form-wrapper {
+      width: 100%;
+    }
+    
+    .contact-links {
+      border-radius: 10px 10px 0 0;
+    }
+    
+    .contact-form-wrapper {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact-box {
+      width: 95%;
+      margin: 8% 5%;
+    }
+  }
+  
+  .contact_header {
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
+    font-size: clamp(30px, 6vw, 60px);
+    letter-spacing: 2px;
+    text-align: center;
+    transform: scale(.95, 1);
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .link {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .contact_social_img {
+    width: 45px;
+    height: 45px;
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #0006);
+    transition: 0.2s;
+    user-select: none;
+  }
+  
+  .contact_social_img:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .contact_social_img:active {
+    transform: scale(1.1, 1.1);
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #222)
+      sepia(0.3);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact_header {
+      font-size: clamp(40px, 10vw, 60px);
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact_header {
+      font-size: clamp(30px, 12vw, 60px);
+    }
+    
+    .links {
+      padding-top: 30px;
+    }
+    
+    .contact_social_img {
+      width: 38px;
+      height: 38px;
+    }
+  }
