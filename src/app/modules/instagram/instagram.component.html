@@ -1,0 +1,11 @@
+<div class="row" style="margin: 0;">
+    <div class="col-md-12" style="padding-top: 10%;">
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+            <a *ngFor="let post of posts" data-lg-size="480-475-480, 800-791-800, 1406-1390" class="gallery-item">
+                <img class="img-responsive" style="max-width: 19% !important;"
+                [src]="post.media_url"
+                     />
+            </a>
+        </lightgallery>
+    </div>
+</div>

@@ -14,14 +14,14 @@
             </form>
 
             <div class="social">
-                <span>Follow us on Social Media</span>
+                <span>Follow us on Social Media<i class="fa-solid fa-4"></i></span>
                 <ul>
                     <li><a href="https://www.facebook.com"
-                            target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><i
-                                class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     <li><a href=" https://www.youtube.com" target="_blank"><i
-                                class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                class="fa fa-youtube" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -29,16 +29,15 @@
         <div class="menu">
             <ul class="nav">
             
-              <li id="home"><a href="/" id="a-home">Home</a></li>
-              <li><a href="/history">Link 1</a></li>
-              <li><a href="/team">Link 2</a></li>
-              <li><a href="/schedule">Link 3</a></li>
-              <li><a href="/news" id="news">Link 4</a></li>
+              <li id="home"><a (click)="gotoHomePage()"  id="a-home">Home</a></li>
+              <li ><a (click)="gotoBlogs()">Blogs</a></li>
+              <li> <a href="/team">Social</a></li>
+              <li><a href="/schedule">Contact</a></li>
+              <li><a href="/news" id="news">About</a></li>
               
             </ul>
         </div>
         <div class="bottom">
         </div>
     </div>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </header>

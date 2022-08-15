@@ -1,0 +1,125 @@
+<!-- Banner -->
+<div class="container_custom">
+    <div class="titular">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80"
+            alt="Students gathered around a table, laughing" class="bg" />
+        <p class="tagline">Discover. Connect. Inspire.</p>
+        <button class="btn">Get Started</button>
+    </div>
+</div>
+<!-- End Banner -->
+
+<!-- Gallery(Using Swiper js) -->
+<div class="row ma-0 pa-0">
+  <div class="col-md-12 ma-0 pa-0 text-center">
+      <h2 class="title">Memories</h2>
+  </div>
+  <div class="col-md-12">
+    <!-- <swiper-gallery></swiper-gallery> -->
+  </div>
+</div>
+<!-- End Gallery -->
+
+<!-- Service  -->
+<div class="service_container">
+    <h2 class="title">Our Services</h2>
+    <div class="service_row">
+      <div class="service">
+        <i class="fa fa-code"></i>
+        <h2>Web Design</h2>
+        <p>
+            Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-bar-chart"></i>
+        <h2>Marketing</h2>
+        <p>
+            Marketing is the process of exploring, creating, and delivering value to meet the needs of a target market in terms of goods and services; potentially including selection of a target audience;
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-diamond"></i>
+        <h2>Graphics</h2>
+        <p>
+            Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit messages to social groups with specific objectives.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-database"></i>
+        <h2>Data Analysis</h2>
+        <p>
+            Data analysis is a process of inspecting, cleansing, transforming, and modelling data with the goal of discovering useful information
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-mobile"></i>
+        <h2>App Development</h2>
+        <p>
+            Mobile application development is the set of processes and procedures involved in writing software for small, wireless computing devices.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-file-text"></i>
+        <h2>Accounting</h2>
+        <p>
+            Accounting, also known as accountancy, is the measurement, processing, and communication of financial and non financial information about economic entities such as businesses and corporations.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-usd"></i>
+        <h2>Payroll</h2>
+        <p>
+            A payroll is the list of employees of some company that is entitled to receive payments as well as other work benefits and the amounts that each should receive.
+        </p>
+      </div>
+      <div class="service">
+        <i class="fa fa-tasks"></i>
+        <h2>Networking</h2>
+        <p>
+            A computer network is a set of computers sharing resources located on or provided by network nodes.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- End Service -->
+
+<!-- Latest blog -->
+<div id="cards_landscape_wrap-2" >
+    <div class="blog_containe">
+        <div class="text-center">
+            <h2 class="title">Latest Blogs</h2>
+        </div>
+        <div class="row" style="margin: 0 !important; padding: 0 !important;">
+            <div class="col-md-3" *ngFor="let item of latestBlogs.slice(0,4); index as i;">
+                <a [href]="item.link" target="_blank">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img [src]="item.thumbnail"
+                                    [alt]="item.title" />
+                            </div>
+                            <div class="text-container">
+                                <h6 [title]="item.title">{{item.title}}</h6>
+                                <div style="color:#1A2434"  [innerHtml]="truncateHTML(item.description)"></div>
+                            </div>
+
+                            <h6 style="text-align: left !important; padding:0 3% 3% 3% !important;color: #8a817c !important;">
+                                {{item.pubDate}}
+                            </h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Latest Blog -->
+
+<!-- Quick Contact Form -->
+<div class="row ma-0 pa-0">
+  <div class="col-md-12 ma-0 pa-0" style="margin: 0 !important;padding:0 !important;">
+    <quick-contact></quick-contact>
+  </div>
+</div>
+<!-- End Quick Contact Form -->
